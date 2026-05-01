@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub Platform - E-commerce Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Raleway', Arial, sans-serif; background: #f0f0f0; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2.5rem 5%; }
+        header h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+        .container { max-width: 1200px; margin: 2rem auto; padding: 0 5%; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+        .product { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .product-img { width: 100%; height: 180px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; }
+        .product-info { padding: 1rem; }
+        .price { color: #667eea; font-weight: bold; font-size: 1.1rem; }
+        footer { background: #333; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+        .cta { background: #667eea; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShopHub Platform</h1>
+        <p>Premium Online Shopping</p>
+    </header>
+    <div class="container">
+        <h2 style="margin: 2rem 0;">Featured Products</h2>
+        <div class="products">
+            <div class="product"><div class="product-img">🛍️</div><div class="product-info"><h4>Product 1</h4><div class="price">$49.99</div></div></div>
+            <div class="product"><div class="product-img">🎁</div><div class="product-info"><h4>Product 2</h4><div class="price">$79.99</div></div></div>
+            <div class="product"><div class="product-img">💎</div><div class="product-info"><h4>Product 3</h4><div class="price">$99.99</div></div></div>
+            <div class="product"><div class="product-img">⭐</div><div class="product-info"><h4>Product 4</h4><div class="price">$59.99</div></div></div>
+        </div>
+        <div style="text-align: center; margin: 2rem 0;"><button class="cta">Shop Now</button></div>
+    </div>
+    <footer><p>&copy; 2024 ShopHub Platform</p></footer>
+</body>
+</html>

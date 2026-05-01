@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Clinic - Healthcare Portfolio Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Raleway', Arial, sans-serif; background: #f9f9f9; color: #333; }
+        header { background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%); color: white; padding: 3rem 5%; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; opacity: 0.95; }
+        .container { max-width: 1200px; margin: 3rem auto; padding: 0 5%; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .service { background: white; padding: 2rem; border-radius: 8px; border-left: 4px solid #0066cc; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .service h3 { color: #0066cc; margin-bottom: 1rem; font-size: 1.3rem; }
+        .service p { color: #666; line-height: 1.6; }
+        .doctors { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .doctor { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .doctor-img { width: 100%; height: 250px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; }
+        .doctor-info { padding: 1.5rem; }
+        .doctor-name { font-weight: 600; color: #0066cc; margin-bottom: 0.3rem; }
+        .doctor-specialty { color: #666; font-size: 0.9rem; }
+        .banner { background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%); color: white; padding: 3rem; text-align: center; border-radius: 8px; margin: 2rem 0; }
+        footer { background: #0066cc; color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        .cta { background: #0066cc; color: white; padding: 1.2rem 2.5rem; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .cta:hover { background: #0052a3; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏥 MediCare Clinic</h1>
+        <p>Your Health is Our Priority</p>
+    </header>
+
+    <div class="container">
+        <div class="banner">
+            <h2>Comprehensive Healthcare Services</h2>
+            <p>With experienced doctors and state-of-the-art facilities</p>
+        </div>
+
+        <h2 style="text-align: center; margin-top: 3rem; color: #0066cc;">Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>🔬 General Checkup</h3>
+                <p>Complete health assessment and preventive care</p>
+            </div>
+            <div class="service">
+                <h3>💊 Pharmacy</h3>
+                <p>Quality medications and health supplements</p>
+            </div>
+            <div class="service">
+                <h3>🦷 Dental Care</h3>
+                <p>Professional dental treatment and hygiene</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin-top: 3rem; color: #0066cc;">Our Expert Doctors</h2>
+        <div class="doctors">
+            <div class="doctor">
+                <div class="doctor-img">👨‍⚕️</div>
+                <div class="doctor-info">
+                    <div class="doctor-name">Dr. James Anderson</div>
+                    <div class="doctor-specialty">General Physician</div>
+                </div>
+            </div>
+            <div class="doctor">
+                <div class="doctor-img">👩‍⚕️</div>
+                <div class="doctor-info">
+                    <div class="doctor-name">Dr. Sarah Collins</div>
+                    <div class="doctor-specialty">Pediatrician</div>
+                </div>
+            </div>
+            <div class="doctor">
+                <div class="doctor-img">👨‍⚕️</div>
+                <div class="doctor-info">
+                    <div class="doctor-name">Dr. Michael Brown</div>
+                    <div class="doctor-specialty">Cardiologist</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <button class="cta">Book an Appointment</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MediCare Clinic. Caring for Your Health.</p>
+    </footer>
+</body>
+</html>

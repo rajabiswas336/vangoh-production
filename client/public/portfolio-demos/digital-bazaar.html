@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Bazaar - E-commerce Portfolio Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Raleway', Arial, sans-serif; background: #f5f5f5; color: #333; }
+        header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 3rem 5%; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        .container { max-width: 1200px; margin: 3rem auto; padding: 0 5%; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .feature { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .feature h3 { color: #1e3c72; margin-bottom: 1rem; font-size: 1.3rem; }
+        .feature p { color: #666; line-height: 1.6; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin: 3rem 0; }
+        .product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img { width: 100%; height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; }
+        .product-info { padding: 1.5rem; }
+        .product-info h4 { color: #1e3c72; margin-bottom: 0.5rem; }
+        .product-price { color: #28a745; font-weight: bold; font-size: 1.2rem; }
+        footer { background: #091223; color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        .cta { background: #e9c3a8; color: #091223; padding: 1.5rem 3rem; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .cta:hover { background: #d4a87e; transform: translateY(-2px); }
+        .banner { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; text-align: center; border-radius: 8px; margin: 2rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛍️ Digital Bazaar</h1>
+        <p>Modern E-commerce Shopping Experience</p>
+    </header>
+
+    <div class="container">
+        <div class="banner">
+            <h2>Welcome to Digital Bazaar</h2>
+            <p>Discover thousands of products with seamless checkout experience</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🏪 Product Catalog</h3>
+                <p>Browse through thousands of carefully curated products across multiple categories</p>
+            </div>
+            <div class="feature">
+                <h3>💳 Secure Checkout</h3>
+                <p>Fast and secure payment processing with multiple payment options</p>
+            </div>
+            <div class="feature">
+                <h3>📦 Fast Shipping</h3>
+                <p>Real-time order tracking and prompt delivery to your doorstep</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin-top: 3rem; color: #1e3c72;">Featured Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-img">📱</div>
+                <div class="product-info">
+                    <h4>Electronics</h4>
+                    <p>Latest tech gadgets</p>
+                    <div class="product-price">$150 - $999</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">👗</div>
+                <div class="product-info">
+                    <h4>Fashion</h4>
+                    <p>Trending styles</p>
+                    <div class="product-price">$25 - $150</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">🏠</div>
+                <div class="product-info">
+                    <h4>Home & Garden</h4>
+                    <p>Quality furniture</p>
+                    <div class="product-price">$50 - $500</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📚</div>
+                <div class="product-info">
+                    <h4>Books</h4>
+                    <p>Wide selection</p>
+                    <div class="product-price">$10 - $40</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <button class="cta">Start Shopping Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Digital Bazaar. All rights reserved. | Modern E-commerce Platform</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haute Couture - Fashion Portfolio Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: #faf8f3; color: #333; }
+        header { background: #000; color: #f0f0f0; padding: 4rem 5%; text-align: center; }
+        header h1 { font-size: 3rem; margin-bottom: 0.5rem; font-weight: 300; letter-spacing: 3px; }
+        header p { font-size: 1.1rem; font-style: italic; color: #c9a961; }
+        .container { max-width: 1200px; margin: 3rem auto; padding: 0 5%; }
+        .collection { margin: 4rem 0; }
+        .collection h2 { font-size: 2rem; margin-bottom: 2rem; color: #000; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+        .item { background: white; border: 1px solid #e0e0e0; }
+        .item-img { width: 100%; height: 350px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem; }
+        .item-details { padding: 1.5rem; }
+        .item-name { font-size: 1.3rem; color: #000; margin-bottom: 0.5rem; }
+        .item-price { color: #c9a961; font-weight: bold; font-size: 1.2rem; }
+        .item-desc { color: #666; font-size: 0.95rem; margin-top: 0.5rem; }
+        footer { background: #000; color: #f0f0f0; text-align: center; padding: 2.5rem; margin-top: 4rem; }
+        .lookbook { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: white; padding: 4rem; text-align: center; margin: 3rem 0; border-radius: 8px; }
+        .lookbook h2 { margin-bottom: 1rem; }
+        .cta { background: #c9a961; color: #000; padding: 1.2rem 2.5rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .cta:hover { background: #e0c080; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HAUTE COUTURE</h1>
+        <p>Luxury Fashion Collection</p>
+    </header>
+
+    <div class="container">
+        <div class="lookbook">
+            <h2>2024 Collection</h2>
+            <p>Discover our exclusive luxury fashion designs crafted for the discerning taste</p>
+        </div>
+
+        <div class="collection">
+            <h2>Spring/Summer Collection</h2>
+            <div class="grid">
+                <div class="item">
+                    <div class="item-img">👗</div>
+                    <div class="item-details">
+                        <div class="item-name">Silk Evening Gown</div>
+                        <div class="item-price">$2,450</div>
+                        <div class="item-desc">Premium silk with hand-beaded details</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">👔</div>
+                    <div class="item-details">
+                        <div class="item-name">Designer Blazer</div>
+                        <div class="item-price">$1,850</div>
+                        <div class="item-desc">Tailored wool with signature cut</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">👠</div>
+                    <div class="item-details">
+                        <div class="item-name">Couture Heels</div>
+                        <div class="item-price">$1,200</div>
+                        <div class="item-desc">Italian leather handcrafted</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 3rem 0;">
+            <button class="cta">View Complete Collection</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Haute Couture. Luxury Fashion at its Finest.</p>
+    </footer>
+</body>
+</html>

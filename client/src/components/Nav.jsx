@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -9,19 +10,30 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const handleAnchorClick = (e, id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      e.preventDefault()
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <nav id="nav" className={scrolled ? 'scrolled' : ''}>
-      <a href="#" className="logo-img">
-        <img src="/nav-logo.png" alt="Vangoh Productions" />
-      </a>
+      <Link to="/" className="logo-img">
+      <img src="/nav-logo.png" alt="Vangoh Productions" />
+        {/* <div className="hero-badge">
+          <span>Creative Agency</span>
+        </div> */}
+      </Link>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" onClick={(e) => handleAnchorClick(e, 'about')}>About</a></li>
+        <li><a href="#services" onClick={(e) => handleAnchorClick(e, 'services')}>Services</a></li>
+        <li><a href="#process" onClick={(e) => handleAnchorClick(e, 'process')}>Process</a></li>
+        <li><a href="#work" onClick={(e) => handleAnchorClick(e, 'work')}>Work</a></li>
+        <li><Link to="/designs">Web Design</Link></li>
+        <li><a href="#contact" onClick={(e) => handleAnchorClick(e, 'contact')}>Contact</a></li>
       </ul>
-      <a href="#contact" className="nav-cta"><span>Commission Us</span></a>
     </nav>
   )
 }
